@@ -5,12 +5,13 @@ interface TextAreaProps {
   id: string;
   name?: string;
   placeholder: string;
+  className?: string;
 }
 
-export default function TextArea({ id, placeholder,name }: TextAreaProps) {
+export default function TextArea({ id, placeholder,name, className }: TextAreaProps) {
   return (
     <textarea
-      className="w-full md:w-full h-32 outline-none border-[1px] rounded-[3px] resize-none text-body py-2 px-3"
+      className={(`w-full md:w-full h-32 outline-none border-[1px] rounded-[3px] resize-none text-body py-2 px-3 ${className}`)}
       id={id}
       name={name}
       required
