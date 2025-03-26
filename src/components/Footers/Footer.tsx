@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import Logo from "../../assets/Logo";
 import Skeleton from "../ui/Skeleton";
-import Input from "../../components/Input";
-import TextArea from "../../components/TextArea";
-import PrimaryButton from "../../components/PrimaryButton";
 import { IoLogoInstagram } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
 import FooterLinks from "../../components/FooterLinks";
+import PrimaryButton from "../../components/ui/PrimaryButton";
+import Input from "../../components/ui/Input";
+import TextArea from "../../components/ui/TextArea";
 
 export default function Footer() {
   const year = new Date()
@@ -102,7 +102,7 @@ export default function Footer() {
                   />
                 </div>
                 <div className='flex flex-1 flex-col w-full gap-2'>
-                  <TextArea className="resize text-black" placeholder={'Mensagem'} />
+                  <TextArea id="" className="resize text-black" placeholder={'Mensagem'} />
                   <PrimaryButton
                     name='Enviar'
                     addClassName='md:w-full w-[8rem] bg-global-color-three/50' />
