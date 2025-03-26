@@ -41,7 +41,7 @@ export default function Header() {
 
       {/* Botão de alternância do menu móvel */}
       <div
-        className="flex flex-col md:hidden gap-1 cursor-pointer"
+        className="flex flex-col md:hidden gap-1 z-50 cursor-pointer"
         onClick={toggleMobileMenu}
       >
         <span className="w-[25px] h-[3px] bg-black"></span>
@@ -81,8 +81,8 @@ export default function Header() {
             onClick={toggleMobileMenu}
             className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
           />
-          <div className="fixed top-8 h-screen right-0 justify-between p-3 bg-black/70 md:hidden z-20">
-            <nav className="flex flex-col justify-center items-center gap-[28px] p-3">
+          <div className="fixed top-0 h-screen right-0 justify-between p-3 bg-zinc-700/100 md:hidden z-20">
+            <nav className="flex flex-col justify-center md:items-center items-start gap-[28px] p-3">
               <Link className={commonLinkStylesWhite} to="/">
                 Início
               </Link>
